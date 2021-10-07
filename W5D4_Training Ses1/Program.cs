@@ -82,17 +82,17 @@ namespace W5D4_Training_Ses1
             //var datetimeObj1 = DateTime.Now.ToShortDateString();
             //var datetimeObj2 = DateTime.Now.ToShortDateString();
 
-            var datetimeObj1 = DateTime.Now.ToShortDateString();
-            var datetimeObj2 = DateTime.Now.AddDays(10);
+            //var datetimeObj1 = DateTime.Now.ToShortDateString();
+            //var datetimeObj2 = DateTime.Now.AddDays(10);
 
-            var daysInMonth = DateTime.DaysInMonth(2021, 10);
-            Console.WriteLine(daysInMonth);
+            //var daysInMonth = DateTime.DaysInMonth(2021, 10);
+            //Console.WriteLine(daysInMonth);
 
-            var isLeapYear = DateTime.IsLeapYear(2020);
-            Console.WriteLine(isLeapYear);
+            //var isLeapYear = DateTime.IsLeapYear(2020);
+            //Console.WriteLine(isLeapYear);
 
-            Console.WriteLine(DateTime.MaxValue);
-            Console.WriteLine(DateTime.MinValue);
+            //Console.WriteLine(DateTime.MaxValue);
+            //Console.WriteLine(DateTime.MinValue);
 
             //if (datetimeObj1.Equals(datetimeObj2))
             //{
@@ -103,8 +103,34 @@ namespace W5D4_Training_Ses1
             //    Console.WriteLine("they are different times");
             //}
 
+            Console.WriteLine("input date");
+            string datetime = Console.ReadLine();
 
+            bool correct = DateTime.TryParse(datetime, out DateTime userdatetime);
+            DateTime DateTimeNow = DateTime.Now;
 
+            if(correct)
+            {
+                Console.WriteLine("valid");
+                if(DateTimeNow > userdatetime)
+                {
+                    Console.WriteLine(DateTimeNow - userdatetime);
+                    
+                }
+
+                else
+                {
+                    Console.WriteLine(userdatetime - DateTimeNow);
+                }
+                
+            }
+
+            else
+            {
+                Console.WriteLine("is invalid");
+                return;
+            }
+            
             Console.ReadLine();
         }
 
