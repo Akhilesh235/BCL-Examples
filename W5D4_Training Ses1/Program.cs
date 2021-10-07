@@ -15,6 +15,12 @@ namespace W5D4_Training_Ses1
             Console.WriteLine("string in lower case " + usr_input.ToLower());
             Console.WriteLine("string in upper case " + usr_input.ToUpper());
 
+            var str1 = "this_is_a_SAMple_seSSIon.";
+            Console.WriteLine(str1);
+
+            Console.WriteLine("the string in correct format");
+            Console.WriteLine(char.ToUpper(str1[0]) + str1.Substring(1).ToLower());
+            
             Console.ReadLine();
 
             //String_BCL_Examples();
