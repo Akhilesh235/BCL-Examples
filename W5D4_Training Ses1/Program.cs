@@ -66,7 +66,42 @@ namespace W5D4_Training_Ses1
             Console.WriteLine(dateTime.ToString("\ndd-MM-yy"));
             Console.WriteLine(dateTime.ToString("dd-MMM-yyyy"));
             Console.WriteLine(dateTime.ToString("hh:mm"));
-            Console.WriteLine(dateTime.ToString("HH:mm"));
+            Console.WriteLine(dateTime.ToString("HH:mm\n"));
+
+            string str = "07/10/2021 23:05";
+
+            DateTime.TryParse(str, out DateTime datetimeObj);
+            Console.WriteLine(datetimeObj);
+
+            //DateTime datetimeObj1 = new DateTime(2021,06,21, 22,45,10);            
+            //DateTime datetimeObj2 = new DateTime(2021, 06, 21, 22, 50, 10);
+
+            //DateTime datetimeObj1 = DateTime.Now;
+            //DateTime datetimeObj2 = DateTime.Now;
+
+            //var datetimeObj1 = DateTime.Now.ToShortDateString();
+            //var datetimeObj2 = DateTime.Now.ToShortDateString();
+
+            var datetimeObj1 = DateTime.Now.ToShortDateString();
+            var datetimeObj2 = DateTime.Now.AddDays(10);
+
+            var daysInMonth = DateTime.DaysInMonth(2021, 10);
+            Console.WriteLine(daysInMonth);
+
+            var isLeapYear = DateTime.IsLeapYear(2020);
+            Console.WriteLine(isLeapYear);
+
+            //if (datetimeObj1.Equals(datetimeObj2))
+            //{
+            //    Console.WriteLine("they are the same");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("they are different times");
+            //}
+
+
+
             Console.ReadLine();
         }
 
