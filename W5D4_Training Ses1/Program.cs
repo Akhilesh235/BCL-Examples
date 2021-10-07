@@ -41,18 +41,32 @@ namespace W5D4_Training_Ses1
             //}
             //Console.ReadLine();
 
-            string str4 = "this is ";
-            string str5 = "sample prog";
-            Console.WriteLine(string.Concat(str4,str5));
+            //string str4 = "this is ";
+            //string str5 = "sample prog";
+            //Console.WriteLine(string.Concat(str4,str5));
 
-            string str7 = "          this is a sample string 2      ";
-            string str6 = "//****   this is a sample string   ****//";
-            char[] chartoremove = { '*', '/', ' ' };
-            var trimmedString = str6.Trim();
-            Console.WriteLine("Removed all whitespaces" + trimmedString);
-            var trimmedstring2 = str6.Trim(chartoremove);
-            Console.WriteLine("removed all char" + trimmedstring2);
+            //string str7 = "          this is a sample string 2      ";
+            //string str6 = "//****   this is a sample string   ****//";
+            //char[] chartoremove = { '*', '/', ' ' };
+            //var trimmedString = str6.Trim();
+            //Console.WriteLine("Removed all whitespaces" + trimmedString);
+            //var trimmedstring2 = str6.Trim(chartoremove);
+            //Console.WriteLine("removed all char" + trimmedstring2);
 
+            DateTime dateTime = DateTime.Now;
+            Console.WriteLine(dateTime.Date);
+            Console.WriteLine(dateTime.Month);
+            Console.WriteLine(dateTime.Year);
+            Console.WriteLine(dateTime.TimeOfDay);
+            Console.WriteLine(dateTime.ToShortDateString());
+            Console.WriteLine(dateTime.ToShortTimeString());
+            Console.WriteLine(dateTime.ToLongTimeString());
+            Console.WriteLine(dateTime.ToLongDateString());
+
+            Console.WriteLine(dateTime.ToString("\ndd-MM-yy"));
+            Console.WriteLine(dateTime.ToString("dd-MMM-yyyy"));
+            Console.WriteLine(dateTime.ToString("hh:mm"));
+            Console.WriteLine(dateTime.ToString("HH:mm"));
             Console.ReadLine();
         }
 
