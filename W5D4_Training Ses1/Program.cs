@@ -53,25 +53,25 @@ namespace W5D4_Training_Ses1
             //var trimmedstring2 = str6.Trim(chartoremove);
             //Console.WriteLine("removed all char" + trimmedstring2);
 
-            DateTime dateTime = DateTime.Now;
-            Console.WriteLine(dateTime.Date);
-            Console.WriteLine(dateTime.Month);
-            Console.WriteLine(dateTime.Year);
-            Console.WriteLine(dateTime.TimeOfDay);
-            Console.WriteLine(dateTime.ToShortDateString());
-            Console.WriteLine(dateTime.ToShortTimeString());
-            Console.WriteLine(dateTime.ToLongTimeString());
-            Console.WriteLine(dateTime.ToLongDateString());
+            //DateTime dateTime = DateTime.Now;
+            //Console.WriteLine(dateTime.Date);
+            //Console.WriteLine(dateTime.Month);
+            //Console.WriteLine(dateTime.Year);
+            //Console.WriteLine(dateTime.TimeOfDay);
+            //Console.WriteLine(dateTime.ToShortDateString());
+            //Console.WriteLine(dateTime.ToShortTimeString());
+            //Console.WriteLine(dateTime.ToLongTimeString());
+            //Console.WriteLine(dateTime.ToLongDateString());
 
-            Console.WriteLine(dateTime.ToString("\ndd-MM-yy"));
-            Console.WriteLine(dateTime.ToString("dd-MMM-yyyy"));
-            Console.WriteLine(dateTime.ToString("hh:mm"));
-            Console.WriteLine(dateTime.ToString("HH:mm\n"));
+            //Console.WriteLine(dateTime.ToString("\ndd-MM-yy"));
+            //Console.WriteLine(dateTime.ToString("dd-MMM-yyyy"));
+            //Console.WriteLine(dateTime.ToString("hh:mm"));
+            //Console.WriteLine(dateTime.ToString("HH:mm\n"));
 
-            string str = "07/10/2021 23:05";
+            //string str = "07/10/2021 23:05";
 
-            DateTime.TryParse(str, out DateTime datetimeObj);
-            Console.WriteLine(datetimeObj);
+            //DateTime.TryParse(str, out DateTime datetimeObj);
+            //Console.WriteLine(datetimeObj);
 
             //DateTime datetimeObj1 = new DateTime(2021,06,21, 22,45,10);            
             //DateTime datetimeObj2 = new DateTime(2021, 06, 21, 22, 50, 10);
@@ -90,6 +90,9 @@ namespace W5D4_Training_Ses1
 
             var isLeapYear = DateTime.IsLeapYear(2020);
             Console.WriteLine(isLeapYear);
+
+            Console.WriteLine(DateTime.MaxValue);
+            Console.WriteLine(DateTime.MinValue);
 
             //if (datetimeObj1.Equals(datetimeObj2))
             //{
