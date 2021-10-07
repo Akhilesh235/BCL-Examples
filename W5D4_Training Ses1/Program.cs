@@ -31,14 +31,28 @@ namespace W5D4_Training_Ses1
             //Console.Read();
             //String_BCL_Examples();
 
-            var str2 = "I love to code in C3";
-            string[] arr = str2.Split(' ');
-            foreach (string word in arr.Reverse())
-            { 
-                Console.Write($"{word.Substring(0, 1).ToUpper()}{word.Substring(1)} ");
-               
-                
-            }
+            //var str2 = "I love to code in C3";
+            //string[] arr = str2.Split(' ');
+            //foreach (string word in arr.Reverse())
+            //{ 
+            //    Console.Write($"{word.Substring(0, 1).ToUpper()}{word.Substring(1)} ");
+
+
+            //}
+            //Console.ReadLine();
+
+            string str4 = "this is ";
+            string str5 = "sample prog";
+            Console.WriteLine(string.Concat(str4,str5));
+
+            string str7 = "          this is a sample string 2      ";
+            string str6 = "//****   this is a sample string   ****//";
+            char[] chartoremove = { '*', '/', ' ' };
+            var trimmedString = str6.Trim();
+            Console.WriteLine("Removed all whitespaces" + trimmedString);
+            var trimmedstring2 = str6.Trim(chartoremove);
+            Console.WriteLine("removed all char" + trimmedstring2);
+
             Console.ReadLine();
         }
 
