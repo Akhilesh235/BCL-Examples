@@ -10,20 +10,36 @@ namespace W5D4_Training_Ses1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("enter any string");
-            var usr_input = Console.ReadLine();
-            Console.WriteLine("string in lower case " + usr_input.ToLower());
-            Console.WriteLine("string in upper case " + usr_input.ToUpper());
+            //Console.WriteLine("enter any string");
+            //var usr_input = Console.ReadLine();
+            //Console.WriteLine("string in lower case " + usr_input.ToLower());
+            //Console.WriteLine("string in upper case " + usr_input.ToUpper());
 
-            var str1 = "this_is_a_SAMple_seSSIon.";
-            Console.WriteLine(str1);
+            //var str1 = "this_is_a_SAMple_seSSIon.";
 
-            Console.WriteLine("the string in correct format");
-            Console.WriteLine(char.ToUpper(str1[0]) + str1.Substring(1).ToLower());
-            
-            Console.ReadLine();
 
+            //Console.WriteLine("the string in correct format");
+            //Console.WriteLine(char.ToUpper(str1[0]) + str1.Substring(1).ToLower());
+
+            //Console.ReadLine();
+
+            //var lst = str1.Split('_');
+            //foreach(string str in lst)
+            //{
+            //    Console.Write(str);
+            //}
+            //Console.Read();
             //String_BCL_Examples();
+
+            var str2 = "I love to code in C3";
+            string[] arr = str2.Split(' ');
+            foreach (string word in arr.Reverse())
+            { 
+                Console.Write($"{word.Substring(0, 1).ToUpper()}{word.Substring(1)} ");
+               
+                
+            }
+            Console.ReadLine();
         }
 
         static void String_BCL_Examples()
